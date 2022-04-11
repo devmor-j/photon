@@ -14,7 +14,7 @@ function isMoreButtonVisible(visible) {
     moreButton.classList.add('hidden');
   }
 }
-
+  
 function clearGallery() {
   removeAllChildNodes(searchGallery);
 }
@@ -59,7 +59,7 @@ async function searchPhotos(query) {
   const queryOptions = {
     method: "GET",
     headers: {
-      Authorization: PEXELS_API_KEY,
+      Authorization: process.env.PEXELS_API_KEY,
     }
   };
 
