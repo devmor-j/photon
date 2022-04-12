@@ -59,7 +59,7 @@ async function searchPhotos(query) {
   const queryOptions = {
     method: "GET",
     headers: {
-      Authorization: process.env.PEXELS_API_KEY,
+      Authorization: PEXELS_API_KEY,
     }
   };
 
